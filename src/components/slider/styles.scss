@@ -1,0 +1,72 @@
+@import '../../vars.scss';
+
+@keyframes animatedBackground {
+    from { background-position: 0px 0; }
+    to { background-position: -1100px 0; }
+}
+
+.slider {
+    margin: 50px 0;
+    .winner {
+        background-color: darken($gold, 5);
+        border: 2px solid $gold;
+        display: inline-block;
+        padding: 40px 80px;
+        h1, h2 {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 900;   
+            margin: 10px 0;
+        }
+        h1.big {
+            margin: 0 0 30px;
+            font-size: 3.2em;
+            line-height: 3.23em;
+        }
+    }
+
+    button.btn {
+        border: 2px solid $gold;
+        background-color: darken($gold, 7);
+        color: white;
+        margin: 40px 0 0;
+    }
+}
+
+.names-slider {
+    // list-style-type: none;
+    // padding: 0;
+    // margin: 0;
+    // text-align: center;
+    // white-space:nowrap;
+    // overflow-x:auto;
+    // animation: animatedBackground 2s linear infinite;
+
+    .slick-slide {
+        // padding: 12px 3em;
+        // position: relative;
+        
+        
+        p {
+            background-color: $blue;
+            font-weight: 500;
+            border: 2px solid white;
+            color: white;
+            margin: 12px 20px;
+            display: block;
+            font-size: 2.2em;
+            line-height: 2.25em;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+    
+}
+
+.img-slider--main {
+    img {
+        object-fit: cover;
+    }
+    .slick-slide {
+        // padding: 20px;
+    }
+}
