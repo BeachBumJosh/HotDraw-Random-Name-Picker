@@ -8,14 +8,14 @@ function NameSlider({entries, updateWinner, compName}) {
     
     const pickRandomWinner = () => {
         
-        var winner = entries[Math.floor(Math.random()*entries.length)];
+        const winner = entries[Math.floor(Math.random()*entries.length)];
         
         setWinner(winner);
         updateWinner(winner);
         alert(`🎉The Winner is ${winner}! 🎉`);
     }
 
-    var settings = {
+    const settings = {
         dots: false,
         infinite: true,
         autoplay: true,

@@ -21,7 +21,7 @@ function App() {
   const [imgUrl, setImgUrl] = useState();
   const [imgs, setImgs] = useState([]);
 
-  console.log('App names = ', names);
+  
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
       setImgs(prevArray => [...prevArray, imgUrl]);
@@ -33,11 +33,11 @@ function App() {
 
   return (
     <div className="App">
-      <header className="">
+      <header className="header">
 
         <div className="header-wrap">
           <div className="header-left">
-            <a href="https://hotdraw.co.uk" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/staging-ac5f0.appspot.com/o/icons%2FnewHotDrawLogoOpt.png?alt=media&token=9eebd585-e459-4046-ab80-4a07267eae62" className="logo" alt="logo" /></a>
+            <a href="https://hotdraw.co.uk" target="_blank" className="header-logo"><img src="https://firebasestorage.googleapis.com/v0/b/staging-ac5f0.appspot.com/o/icons%2FnewHotDrawLogoOpt.png?alt=media&token=9eebd585-e459-4046-ab80-4a07267eae62" className="logo" alt="logo" /></a>
             <h1>Random Name Picker</h1>
           </div>
 
@@ -53,9 +53,9 @@ function App() {
           <nav className="nav">
             <ul>
               <li>
-                <Link to="/form">Add Entries</Link>
+                <Link to="/form">Entries</Link>
               </li>
-              <li><Link to="/slider">Names</Link></li>
+              <li><Link to="/slider">The Draw</Link></li>
 
               <li><Link to="/how">How it Works</Link></li>              
             </ul>

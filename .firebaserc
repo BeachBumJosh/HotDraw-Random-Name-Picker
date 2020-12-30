@@ -1,6 +1,7 @@
 {
   "projects": {
     "default": "hotdraw-random-name-picker",
-    "picker": "hotdraw-random-name-picker"
+    "picker": "hotdraw-random-name-picker",
+    "pickr": "hotdraw-random-name-picker"
   }
 }
